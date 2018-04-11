@@ -1,0 +1,65 @@
+body {
+  background: #fff; }
+
+.login-box {
+  margin: 0.851970181rem 1.7039403621rem; }
+  .login-box .file-group {
+    padding: 0.2129925453rem;
+    border-bottom: 1px solid #ddd;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0.851970181rem;
+    /*align-items: flex-end;*/ }
+    .login-box .file-group label {
+      width: 1.2779552716rem;
+      height: 1.2779552716rem;
+      -ms-flex-negative: 0;
+      flex-shrink: 0; }
+    .login-box .file-group.phone label {
+      background: url("../images/icon/phone.png") no-repeat center center;
+      background-size: cover; }
+    .login-box .file-group.verify label {
+      background: url("../images/icon/verify.png") no-repeat center center;
+      background-size: cover; }
+    .login-box .file-group .input {
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      background: none;
+      font-size: 0.5111821086rem;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .login-box .file-group .input input {
+        line-height: 1.2779552716rem;
+        padding: 0 0.4259850905rem 0 0.851970181rem;
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        font-size: 0.5111821086rem;
+        color: #666; }
+      .login-box .file-group .input .btn-get-verify {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        color: #333;
+        line-height: 1.2779552716rem;
+        font-size: 0.5111821086rem; }
+  .login-box .submit-btn {
+    font-size: 0.6389776358rem;
+    color: #fff;
+    display: block;
+    background: #2C3E50;
+    line-height: 2.0447284345rem;
+    text-align: center;
+    margin-top: 2.1299254526rem; }
+
+/*# sourceMappingURL=login.css.map */

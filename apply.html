@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>报名课程</title>
+    <link rel="stylesheet" href="css/base_2017.css">
+    <link rel="stylesheet" href="css/apply.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/fontsize.js"></script>
+</head>
+
+<body>
+    <img src="images/icon/choose.png" style="position: relative;z-index: -1">
+    <header id="fy-header">
+        <a class="btn-back" href="javascript:history.go(-1);"><span>返回</span></a>
+        <b class="btn-menu">
+            <i></i>
+            <i></i>
+            <i></i>
+        </b>
+        <p class="title">课程详情页</p>
+    </header>
+    <div class="menu-box">
+        <p class="mask-layer"></p>
+        <div class="menu-bar">
+            <ul class="menu-list">
+                <li class="item active">
+                    <a href="index.html">
+                        主页
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="goods_list.html">
+                        考研计划
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="work_project.html">
+                        就业计划
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="around_project.html">
+                        圈子计划
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="apply_list.html">
+                        查看已报名课程
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section id="main">
+        <div class="top-banner">
+            <img src="images/course_bg.png" alt="banner" />
+        </div>
+        <div class="form-body">
+            <form action="" method="post">
+                <div class="form-part">
+                    <div class="form1">
+                        <p class="form-title">填写信息</p>
+                        <div class="file-group">
+                            <label class="label">姓名</label>
+                            <div class="input">
+                                <input type="text" placeholder="请输入姓名" />
+                            </div>
+                        </div>
+                        <div class="file-group">
+                            <label class="label">本科院校</label>
+                            <div class="input selection">
+                                <span class="show" id="choose-school" data-target="school-slide">请选择您的本科院校</span>
+                                <input type="text" value="" disabled hidden/>
+                            </div>
+                        </div>
+                        <div class="file-group">
+                            <label class="label">本科专业</label>
+                            <div class="input  selection">
+                                <span class="show" id="choose-discipline" data-target="discipline-slide">请选择您的本科专业</span>
+                                <input type="text" value="" disabled hidden/>
+                            </div>
+                        </div>
+                        <div class="file-group">
+                            <label class="label">手机号码</label>
+                            <div class="input phone-num">
+                                <input type="text" placeholder="请输入您的手机号码" />
+                                <b class="btn-verify">获取验证码</b>
+                            </div>
+                        </div>
+                        <div class="file-group">
+                            <label class="label">验证码</label>
+                            <div class="input">
+                                <input type="text" placeholder="请输入您的验证码" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-part">
+                    <p class="title">核对课程</p>
+                    <div class="course-header">
+                        <div class="img">
+                            <img src="upload/index-bg1.png" alt="货币金融">
+                        </div>
+                        <div class="msg">
+                            <p class="course-title">货币金融学入门课程</p>
+                            <p class="date">
+                                <span>2018.5.1-5.2</span>
+                                <span>课时：6节</span>
+                            </p>
+                            <div class="bottom">
+                                <span class="price"><i>¥</i>2800</span>
+                                <span>基础班</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-group">
+                        <div class="input">
+                            <span class="show" id="choose-course" data-target="course-slide">401课程</span>
+                            <input type="text" value="1" disabled hidden/>
+                        </div>
+                        <div class="input">
+                            <span class="show" id="choose-class" data-target="class-slide">基础班</span>
+                            <input type="text" value="1" disabled hidden/>
+                        </div>
+                        <div class="input">
+                            <span class="show" id="choose-time" data-target="time-slide">选择全程班</span>
+                            <input type="text" value="1" disabled hidden/>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-body">
+                    <p class="title">友情提示</p>
+                    <div class="content">
+                        全程班报名，2018年5月之前八折，即4960（431）/6080（802），2018年8月之前九折，即5580（431）/6840（802），2018年8月1日及之后报名，全程班为原价，即6200（431）/7600（802）。 若是单科报名，为原价。
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div id="fy-footer">
+        <div class="opera-group">
+            <span><i>价格：¥</i>2800</span>
+            <a href="apply_result.html">我要报名</a>
+        </div>
+    </div>
+    <div class="full-screen">
+        <p class="mask-layer"></p>
+        <div class="slide">
+            <div class="school-slide slide-item">
+                <p class="title">选择院校</p>
+                <div class="swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <span class="item" data-code="1" data-word="北京外国语大学">
+                                <i class="img">
+                                    <img src="upload/course-1.png"/>
+                                </i>
+                                <b>北京外国语大学</b>
+                            </span>
+                            <span class="item" data-code="2" data-word="中国医科大学">
+                                <i class="img">
+                                    <img src="upload/course-2.png"/>
+                                </i>
+                                <b>中国医科大学</b>
+                            </span>
+                            <span class="item" data-code="3" data-word="天津大学">
+                                <i class="img">
+                                    <img src="upload/course-3.png"/>
+                                </i>
+                                <b>天津大学</b>
+                            </span>
+                            <span class="item" data-code="4" data-word="北京外国语大学">
+                                <i class="img">
+                                    <img src="upload/course-4.png"/>
+                                </i>
+                                <b>北京外国语大学</b>
+                            </span>
+                            <span class="item" data-code="5" data-word="中国医科大学">
+                                <i class="img">
+                                    <img src="upload/course-5.png"/>
+                                </i>
+                                <b>中国医科大学</b>
+                            </span>
+                            <span class="item" data-code="6" data-word="天津大学">
+                                <i class="img">
+                                    <img src="upload/course-6.png"/>
+                                </i>
+                                <b>天津大学</b>
+                            </span>
+                            <span class="item" data-code="7" data-word="北京外国语大学">
+                                <i class="img">
+                                    <img src="upload/course-7.png"/>
+                                </i>
+                                <b>北京外国语大学</b>
+                            </span>
+                            <span class="item" data-code="8" data-word="中国医科大学">
+                                <i class="img">
+                                    <img src="upload/course-8.png"/>
+                                </i>
+                                <b>中国医科大学</b>
+                            </span>
+                            <span class="item" data-code="9" data-word="天津大学">
+                                <i class="img">
+                                    <img src="upload/course-9.png"/>
+                                </i>
+                                <b>天津大学</b>
+                            </span>
+                        </li>
+                    </ul>
+                    <!-- 当页数一页为9个，页数为1时隐藏下面这个页码组件 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="discipline-slide slide-item">
+                <p class="title">选择专业<span class="small">(可双选)</span></p>
+                <div class="list">
+                    <span class="item" data-code="1" data-word="管理类">管理类</span>
+                    <span class="item" data-code="2" data-word="财务及商务类">财务及商务类</span>
+                    <span class="item" data-code="3" data-word="师范类">师范类</span>
+                    <span class="item" data-code="4" data-word="计算机通信类">计算机通信类</span>
+                    <span class="item" data-code="5" data-word="语言类">语言类</span>
+                    <span class="item" data-code="6" data-word="物流类">物流类</span>
+                    <span class="item" data-code="7" data-word="机械工程类">机械工程类</span>
+                    <span class="item" data-code="8" data-word="建筑工程类">建筑工程类</span>
+                </div>
+            </div>
+            <div class="course-slide slide-item">
+                <p class="title">核对课程</p>
+                <div class="list">
+                    <span class="item active" data-code="1" data-word="401课程">401课程</span>
+                    <span class="item" data-code="2" data-word="802课程">802课程</span>
+                </div>
+            </div>
+            <div class="time-slide slide-item">
+                <p class="title">核对课程</p>
+                <div class="list">
+                    <span class="item active" data-code="1" data-word="全程班">全程班</span>
+                    <span class="item" data-code="2" data-word="后半段班">后半段班</span>
+                </div>
+            </div>
+            <div class="class-slide slide-item">
+                <p class="title">核对课程</p>
+                <ul class="list">
+                    <li class="item active" data-word="基础班" data-code="1">
+                        <span class="choose-icon"></span>
+                        <div class="msg">
+                            <p class="line-1">
+                                <span class="s-title">基础班</span>
+                                <a href="javascript:;">查看详情</a>
+                            </p>
+                            <p class="line-2">
+                                2018年5月1日至2018年5月2日
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item" data-word="提高班" data-code="2">
+                        <span class="choose-icon"></span>
+                        <div class="msg">
+                            <p class="line-1">
+                                <span class="s-title">提高班</span>
+                                <a href="javascript:;">查看详情</a>
+                            </p>
+                            <p class="line-2">
+                                2018年5月1日至2018年5月2日
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item" data-word="强化班" data-code="3">
+                        <span class="choose-icon"></span>
+                        <div class="msg">
+                            <p class="line-1">
+                                <span class="s-title">强化班</span>
+                                <a href="javascript:;">查看详情</a>
+                            </p>
+                            <p class="line-2">
+                                2018年5月1日至2018年5月2日
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <span class="btn-cancle btn">取消</span>
+                <span class="btn-de btn" data-class="" data-id="">确定</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+    $(function() {
+
+        //点击菜单按钮，收关菜单操作
+        $('.btn-menu').click(function() {
+
+            var b = $('.menu-box');
+            if (b.hasClass("on")) {
+
+                b.removeClass("on");
+                b.hide();
+            } else {
+                b.show(50);
+                b.addClass("on");
+            }
+        });
+
+
+        //选课轮播
+        function mySwiper() {
+            new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination', // 分页器
+            })
+
+        }
+
+        //所有下拉框，点击弹出下拉列表效果
+        $('.input .show').click(function() {
+
+            var target = $(this).data('target'),
+                id = $(this).attr('id');
+            $('.full-screen .btn-group .btn-de').attr('data-id', id);
+            $('.full-screen .btn-group .btn-de').attr('data-class', target);
+            $('.full-screen,.' + target).show();
+            if (target == "school-slide") {
+                mySwiper();
+            }
+        })
+
+        //课程相关的单选操作
+        $('.course-slide .list,.class-slide .list,.time-slide .list').on('click', '.item', function() {
+            var _this = $(this);
+
+            if (_this.hasClass("active")) {
+                return;
+            } else {
+                _this.addClass('active').siblings('.active').removeClass('active');
+            }
+        });
+
+        //院校选择单选操作
+        $('.school-slide .swiper-slide').on('click', '.item', function() {
+
+            var _this = $(this);
+
+            if (_this.hasClass('active')) {
+                _this.removeClass('active');
+            } else {
+                _this.parent().parent().find('.item.active').removeClass('active');
+                _this.addClass('active');
+            }
+
+        });
+
+        //专业选择操作
+        $('.discipline-slide .list').on('click', '.item', function() {
+            var _this = $(this);
+
+            if (_this.hasClass('active')) {
+                _this.removeClass('active');
+            } else {
+                if (_this.parent().find('.item.active').length > 1) {
+                    alert('只能选2个专业');
+                    return;
+                } else {
+                    _this.addClass('active');
+                }
+            }
+
+
+        })
+
+
+        //弹出框的取消按钮触发点击事件
+        $(".full-screen .btn-cancle").click(function() {
+            $(".full-screen,.full-screen .slide-item").hide();
+        });
+
+        //弹出框的确认按钮---fun获取选择的分类code
+        $('.full-screen .btn-de').click(function() {
+
+            var _this = $(this),
+                cla = _this.attr("data-class"),
+                id = _this.attr("data-id"),
+                array_code = [], //用了存放code的数组,
+                array_word = [], //用于存放对应的文字
+                select_dom = $('.full-screen .' + cla), //选择框父容器
+                setdata_dom = $('#' + id); //数据存放表单父元素
+            var selectedDom = select_dom.find('.item.active');
+            for (var i = 0; i < selectedDom.length; i++) {
+                array_code.push($(selectedDom[i]).attr('data-code'));
+                array_word.push($(selectedDom[i]).attr('data-word'));
+            }
+
+            if (array_code.length > 0 && array_word.length > 0) {
+
+                setdata_dom.html(array_word.join('、')).siblings('input').attr("value", array_code.join(','));
+                setdata_dom.addClass('active');
+            }else{
+
+                setdata_dom.removeClass('active');
+
+            }
+
+            $('.full-screen,.' + cla).hide();
+
+        });
+
+
+        /*手机键盘弹起方案覆盖输入框解决方案*/
+        (function() {
+
+            
+            $(".file-group input").on("focus", function() {
+                var _this = $(this);
+                $('#fy-footer').hide();
+                _this.parents('.file-group').addClass('active');
+               
+
+
+            }).on("blur", function() {
+                 var _this = $(this);
+                $('#fy-footer').show();
+                _this.parents('.file-group').removeClass('active');
+            });
+
+            var winHeight = $(window).height();
+            var preHeight = winHeight;
+            $(window).resize(function(){
+
+                    setTimeout(function(){
+                         var thisHeight = $(window).height();
+                        var sub = preHeight - thisHeight;
+                    
+                
+                        if( Math.abs(sub) > 50){
+                              preHeight = thisHeight;
+                             
+                            var scrollTop = $("#main").scrollTop();
+                            $('#main').scrollTop(scrollTop + sub/2 );
+                           
+                        }
+                    },100);
+                   
+
+            });
+        })()
+
+
+
+
+
+    })
+    </script>
+</body>
+
+</html>

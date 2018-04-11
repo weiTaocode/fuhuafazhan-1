@@ -1,0 +1,47 @@
+body {
+  background: #fff; }
+
+.apply-list .item {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .apply-list .item .no {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-size: 0.5537806177rem;
+    color: #aaa;
+    margin: 0 0.6389776358rem 0 0.7667731629rem; }
+  .apply-list .item .msg {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+    padding: 0.4259850905rem 0; }
+    .apply-list .item .msg .line {
+      margin-bottom: 0.4259850905rem;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .apply-list .item .msg .line:last-child {
+        margin-bottom: 0; }
+      .apply-list .item .msg .line.line-1, .apply-list .item .msg .line.line-2 {
+        font-size: 0.6389776358rem;
+        color: #333; }
+      .apply-list .item .msg .line.line-1 span:first-child {
+        margin-right: 1.2779552716rem; }
+      .apply-list .item .msg .line.line-2 span:first-child {
+        margin-right: 0.4259850905rem; }
+      .apply-list .item .msg .line.line-3 {
+        font-size: 0.5111821086rem;
+        color: #666; }
+        .apply-list .item .msg .line.line-3 span:first-child {
+          margin-right: 1.7039403621rem; }
+
+/*# sourceMappingURL=apply_list.css.map */

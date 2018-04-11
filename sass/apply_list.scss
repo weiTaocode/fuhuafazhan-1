@@ -1,0 +1,67 @@
+
+$de_font:23.475px;
+@function pxTorem($px){
+	@return $px / $de_font * 1rem;
+}
+
+body{
+	background: #fff;
+}
+.apply-list{
+	.item{
+		display:-webkit-box;
+		display:-moz-box;
+		display:-ms-flexbox;
+		display:flex;
+		-webkit-box-align: center;
+		   -moz-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		.no{
+			-ms-flex-negative: 0;
+			    flex-shrink: 0;
+			font-size:pxTorem(13px);
+			color:#aaa;
+			margin:0 pxTorem(15px) 0 pxTorem(18px);
+		}
+		.msg{
+			-webkit-box-flex:1;
+			   -moz-box-flex:1;
+			    -ms-flex:1;
+			        flex:1;
+			border-bottom: 1px solid #ddd;
+			padding:pxTorem(10px) 0;
+			.line{
+				margin-bottom: pxTorem(10px);
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: flex;
+				&:last-child{
+					margin-bottom:0;
+				}
+				&.line-1,&.line-2{
+					font-size: pxTorem(15px);
+					color:#333;
+				}
+				&.line-1{
+					span:first-child{
+						margin-right:pxTorem(30px);
+					}
+				}
+				&.line-2{
+					span:first-child{
+						margin-right:pxTorem(10px);
+					}
+				}
+				&.line-3{
+					font-size:pxTorem(12px);
+					color:#666;
+					span:first-child{
+						margin-right:pxTorem(40px);
+					}
+				}
+			}
+		}
+	}
+}

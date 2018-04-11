@@ -1,0 +1,141 @@
+$de_font:23.475px;
+@function pxTorem($px){
+	@return $px / $de_font * 1rem;
+}
+.top-fixed-header{
+	position: absolute;
+	top:pxTorem(44px);
+	left:0;
+	width:100%;
+	height:pxTorem(88px);
+	background:#f7f7f7;
+	z-index: 10;
+	.first-tab,.second-tab{
+		display:-webkit-box;
+		display:-moz-box;
+		display:-ms-flexbox;
+		display:flex;
+		border-bottom: 1px solid #ddd;
+		.item{
+			-webkit-box-flex:1;
+			   -moz-box-flex:1;
+			    -ms-flex:1;
+			        flex:1;
+			border-right:1px solid #ddd;
+			height:pxTorem(44px);
+			line-height: pxTorem(44px);
+			text-align: center;
+			font-size:pxTorem(16px);
+			color:#999;
+			&:last-child{
+				border-right:none;
+			}
+			&.active{
+				color:#2C3E50;
+			};
+		}
+		
+	}
+	.second-tab{
+		.item{
+			border-right:none;
+			border-bottom: 2px solid transparent;
+			&.active{
+				border-bottom-color: #2C3E50;
+			}
+		}
+		
+	}
+}
+.goods-list{
+	position: absolute;
+	top:pxTorem(44px);
+	left:0;
+	bottom:0;
+	width:100%;
+	padding:pxTorem(88px) 0 pxTorem(44px) 0;
+	overflow-y: auto;
+	background: #f7f7f7;
+	.list{
+		min-height:100%;
+		&:before{
+			content:"";
+			display:table;
+		}
+	}
+	.goods-item{
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		padding:pxTorem(15px) pxTorem(18px);
+		background: #fff;
+		margin-top: pxTorem(10px);
+		.img{
+			width:pxTorem(140px);
+			height:pxTorem(90px);
+			overflow:hidden;
+			img{
+				height:100%;
+				width:auto;
+				display: block;
+			}
+		}
+		.msg{
+			-webkit-box-flex:1;
+			   -moz-box-flex:1;
+			    -ms-flex:1;
+			        flex:1;
+			margin-left:pxTorem(10px);
+
+			.title{
+				line-height: 2;
+				font-size: pxTorem(14px);
+				color:#333;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.description{
+				font-size: pxTorem(12px);
+				color:#666;
+				line-height: pxTorem(20px);
+				height:pxTorem(40px);
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-box-orient:vertical;
+				-webkit-line-clamp:2;
+				margin:pxTorem(3px) 0;
+			}
+			.bottom{
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: end;
+				   -moz-box-align: end;
+				    -ms-flex-align: end;
+				        align-items: flex-end;
+				.com{
+					font-size: pxTorem(12px);
+					color:#666;
+					// margin-right: pxTorem(10px);
+					&:nth-child(2){
+						-webkit-box-flex:1;
+						   -moz-box-flex:1;
+						    -ms-flex:1;
+						        flex:1;
+						        text-align:center;
+					}
+					// &:last-child{
+					// 	margin-right: 0;
+					// }
+					&.pay{
+						font-size:pxTorem(14px);
+						color:#2C3E50;
+					}
+				}	
+			}
+		}
+	}
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>圈子计划</title>
+    <script src="js/fontsize.js"></script>
+    <link rel="stylesheet" href="css/base_2017.css">
+    
+    
+    <style>
+        body{
+            background: #fff;
+        }
+       
+    </style>
+</head>
+<body>
+    <header id="fy-header">
+
+        <a class="btn-back" href="javascript:history.go(-1);"><span>返回</span></a>
+        <b class="btn-menu">
+            <i></i>
+            <i></i>
+            <i></i>
+        </b>
+        <p class="title">圈子计划</p>
+    </header>
+    <div class="menu-box">
+        <p class="mask-layer"></p>
+        <div class="menu-bar">
+            <ul class="menu-list">
+                <li class="item active">
+                    <a href="index.html">
+                        主页
+                    </a>
+                </li>
+                 <li class="item">
+                    <a href="goods_list.html">
+                        考研计划
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="work_project.html">
+                        就业计划
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="around_project.html">
+                        圈子计划
+                    </a>
+                </li>
+                 <li class="item">
+                    <a href="apply_list.html">
+                        查看已报名课程
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <section id="main">
+        <!-- 该样式只为展示用,后面需要富文本代替-->
+        <style>
+            .page{
+                padding:20px 15px;
+                font-size: 12px;
+                color:#666;
+            }
+            .page p{
+                line-height: 1.8;
+                text-indent: 2em;
+                margin-bottom: 3px;
+            }
+            .page img{
+                display: block;
+                max-width: 100%;
+                height:auto;
+                margin:20px auto;
+            }
+        </style>
+        <div class="page">
+            <p>金融，即各种资源的整合进行创造价值！为什么复骅发展创始团队能够直接提供给前述三类人券商研究所免试实习机会，而不是只能“推荐”？</p>
+<p>我们衷心的希望，不论你是在读研究生还是未来通过本计划考上的学员；无论以后工作还是创业，切勿单打独斗，都能够建立起自己的圈子。同样的，复骅发展创始团队也希望与我们的学员、我们的讲师以及对我们有贡献的特别人士建立深厚的友谊，形成复骅发展“朋友圈”，成就一番事业！</p>
+            
+            <img src="upload/qz.png" alt=""/>
+            <img src="upload/circle-table.png" alt=""/>
+            <!-- <div class="table"> -->
+               <!--  <h5 class="table-title">西南财经大学802/431专业课对应考研专业一览</h5> -->
+                <!-- <table>
+                    <thead>
+                        <tr>
+                            <th>专业课</th>
+                            <th>代码</th>
+                            <th>专业课名称</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>431</td>
+                            <td>025100</td>
+                        </tr>
+                    </tbody>
+                </table> -->
+            <!-- </div> -->
+        </div>
+    </section>
+    <!-- <div id="fy-footer">
+        <p class="copy">Copyright 1999-2018 复骅发展版权所有</p>
+    </div> -->
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script>
+        $(function(){
+
+            //点击菜单按钮，收关菜单操作
+            $('.btn-menu').click(function(){
+
+                var b = $('.menu-box');
+                if (b.hasClass("on")) {
+                    
+                    b.removeClass("on");
+                    b.hide();
+                }else{
+                    b.show(50);
+                    b.addClass("on");
+                }
+            });
+        })
+    </script>
+</body>
+</html>

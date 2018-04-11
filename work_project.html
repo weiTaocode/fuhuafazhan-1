@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>就业计划</title>
+    <script src="js/fontsize.js"></script>
+    <link rel="stylesheet" href="css/base_2017.css">
+    
+    
+    <style>
+        body{
+            background: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <header id="fy-header">
+
+        <a class="btn-back" href="javascript:history.go(-1);"><span>返回</span></a>
+        <b class="btn-menu">
+            <i></i>
+            <i></i>
+            <i></i>
+        </b>
+        <p class="title">就业计划</p>
+    </header>
+    <div class="menu-box">
+        <p class="mask-layer"></p>
+        <div class="menu-bar">
+            <ul class="menu-list">
+                <li class="item active">
+                    <a href="index.html">
+                        主页
+                    </a>
+                </li>
+                 <li class="item">
+                    <a href="goods_list.html">
+                        考研计划
+                    </a>
+                </li>
+                 <li class="item">
+                    <a href="work_project.html">
+                        就业计划
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="around_project.html">
+                        圈子计划
+                    </a>
+                </li>
+                 <li class="item">
+                    <a href="apply_list.html">
+                        查看已报名课程
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <section id="main">
+        <!-- 该样式只为展示用,后面需要富文本代替-->
+        <style>
+            .page{
+                padding:20px 15px;
+                font-size: 12px;
+                color:#666;
+            }
+            .page p{
+                line-height: 1.8;
+                text-indent: 2em;
+                margin-bottom: 3px;
+            }
+        </style>
+        <div class="page">
+            <p>复骅发展-就业计划致力于为西财金融硕士规划职业发展，助其更好的就业，我们将主要通过两个方面帮助大家:</p>
+            <p> 1. 就业指导讲座</p>
+            <p>
+复骅发展将通过创始团队的业内资源，邀请金融行业各领域的精英嘉宾进行就业专题讲座，让学生更好的了解金融行业，了解就业市场，进而提升自己以适应瞬息万变的金融界。</p>
+<p> 2. 提供实习机会</p>
+<p>复骅发展将充分发挥创始团队的行业资源，提供给以下三类重要合作者券商研究所免试实习机会：</p> 
+<p>（1）通过本计划考上西财的优秀学员；</p>
+
+<p> （2）本计划授课老师；</p><p>    （3）特别贡献者。</p>
+        </div>
+    </section>
+    <!-- <div id="fy-footer">
+        <p class="copy">Copyright 1999-2018 复骅发展版权所有</p>
+    </div> -->
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script>
+        $(function(){
+
+            //点击菜单按钮，收关菜单操作
+            $('.btn-menu').click(function(){
+
+                var b = $('.menu-box');
+                if (b.hasClass("on")) {
+                    
+                    b.removeClass("on");
+                    b.hide();
+                }else{
+                    b.show(50);
+                    b.addClass("on");
+                }
+            });
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>已报名课程</title>
+    <link rel="stylesheet" href="css/base_2017.css">
+    <link rel="stylesheet" href="css/apply_list.css">
+    <script src="js/fontsize.js"></script>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <header id="fy-header">
+
+        <a class="btn-back" href="javascript:history.go(-2);"><span>返回</span></a>
+        <b class="btn-menu">
+            <i></i>
+            <i></i>
+            <i></i>
+        </b>
+        <p class="title">已报名课程</p>
+    </header>
+    <div class="menu-box">
+        <p class="mask-layer"></p>
+        <div class="menu-bar">
+            <ul class="menu-list">
+                <li class="item active">
+                    <a href="index.html">
+                        主页
+                    </a>
+                </li>
+                 <li class="item">
+                    <a href="goods_list.html">
+                        考研计划
+                    </a>
+                </li>
+                 <li class="item">
+                    <a href="work_project.html">
+                        就业计划
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="around_project.html">
+                        圈子计划
+                    </a>
+                </li>
+                 <li class="item">
+                    <a href="javascript:;">
+                        查看已报名课程
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <section id="main">
+       <ul class="apply-list">
+            <li class="item">
+                <span class="no">01</span>
+                <div class="msg">
+                    <p class="line line-1">
+                        <span class="name">宇同学</span>
+                        <span class="phone">137*******</span>
+                    </p>
+                    <p class="line line-2">
+                        <span>431&nbsp;课程</span>
+                        <span>货币金融学入门课程</span>
+                    </p>
+                    <p class="line line-3">
+                        <span>时间：2018.5.1</span>
+                        <span>课时：6节</span>
+                    </p>
+                </div>
+            </li>
+             <li class="item">
+                <span class="no">02</span>
+                <div class="msg">
+                    <p class="line line-1">
+                        <span class="name">宇同学</span>
+                        <span class="phone">137*******</span>
+                    </p>
+                    <p class="line line-2">
+                        <span>431&nbsp;课程</span>
+                        <span>货币金融学入门课程</span>
+                    </p>
+                    <p class="line line-3">
+                        <span>时间：2018.5.1</span>
+                        <span>课时：6节</span>
+                    </p>
+                </div>
+            </li>
+       </ul>
+    </section>
+   
+    <script>
+        $(function(){
+
+            //点击菜单按钮，收关菜单操作
+            $('.btn-menu').click(function(){
+
+                var b = $('.menu-box');
+                if (b.hasClass("on")) {
+                    
+                    b.removeClass("on");
+                    b.hide();
+                }else{
+                    b.show(50);
+                    b.addClass("on");
+                }
+            });
+        })
+    </script>
+</body>
+</html>

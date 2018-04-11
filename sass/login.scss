@@ -1,0 +1,86 @@
+
+$de_font:23.475px;
+@function pxTorem($px){
+	@return $px / $de_font * 1rem;
+}
+body{
+	background: #fff;
+}
+.login-box{
+	margin:pxTorem(20px) pxTorem(40px);
+	.file-group{
+		padding:pxTorem(5px);
+		border-bottom:1px solid #ddd;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		margin-bottom: pxTorem(20px);
+		/*align-items: flex-end;*/
+		label{
+			width:pxTorem(30px);
+			height:pxTorem(30px);
+			-ms-flex-negative: 0;
+			    flex-shrink: 0;
+		}
+		&.phone{
+			label{
+				background: url('../images/icon/phone.png')no-repeat center center;
+				background-size: cover;
+			}
+			
+		}
+		&.verify{
+			label{
+				background: url('../images/icon/verify.png')no-repeat center center;
+				background-size: cover;
+			}
+			
+		}
+		.input{
+			-webkit-box-flex:1;
+			   -moz-box-flex:1;
+			    -ms-flex:1;
+			        flex:1;
+			background: none;
+			font-size:pxTorem(12px);
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			   -moz-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			input{
+				line-height: pxTorem(30px);
+				padding: 0 pxTorem(10px) 0 pxTorem(20px);
+				-webkit-box-flex:1;
+				   -moz-box-flex:1;
+				    -ms-flex:1;
+				        flex:1;
+				font-size: pxTorem(12px);
+				color:#666;
+			}
+			.btn-get-verify{
+
+				-ms-flex-negative: 0;
+
+				    flex-shrink: 0;
+				color:#333;
+				line-height: pxTorem(30px);
+				font-size: pxTorem(12px);
+			}
+		}
+		
+	}
+	.submit-btn{
+		font-size: pxTorem(15px);
+		color:#fff;
+		display:block;
+		background:#2C3E50;
+		line-height: pxTorem(48px);
+		text-align:center; 
+		margin-top: pxTorem(50px);
+	}
+}

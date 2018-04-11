@@ -1,0 +1,202 @@
+$de_font:23.475px;
+@function pxTorem($px){
+    @return $px / $de_font * 1rem;
+}
+.detail {
+    background: #fff;
+    .detail-header {
+
+        .img {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .msg {
+            padding: pxTorem(15px) pxTorem(20px);
+            .title {
+                font-size: pxTorem(16px);
+                color: #333;
+                line-height: pxTorem(32px);
+                ;
+            }
+            .description {
+                font-size: pxTorem(15px);
+                color: #999;
+                line-height: pxTorem(24px);
+            }
+            .pay {
+                color: #2C3E50;
+                font-size: pxTorem(16px);
+                margin-top: pxTorem(10px);
+                i {
+                    font-size: pxTorem(10px);
+                    padding-right: pxTorem(2px);
+                }
+            }
+            .other {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                margin-top: pxTorem(10px);
+                -webkit-box-pack: justify;
+                   -moz-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+                .item {
+                    font-size: pxTorem(12px);
+                    color: #999;
+                }
+            }
+        }
+        .server {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+
+            .item{
+                -webkit-box-flex:1;
+                   -moz-box-flex:1;
+                    -ms-flex:1;
+                        flex:1; 
+                background: #f7f7f7;
+                height: pxTorem(38px);
+                line-height: pxTorem(38px);
+                color:#aaa;
+                font-size: pxTorem(12px);
+                text-align: center;
+                i{
+                    width:pxTorem(15px);
+                    height:pxTorem(15px);
+                    margin-right: pxTorem(3px);
+                    display: inline-block;
+                    vertical-align: middle;
+                    &.icon1{
+                        background: url("../images/icon/server-1.png")no-repeat center center;
+                        background-size: cover;
+                    }
+                    &.icon2{
+                        background: url("../images/icon/server-2.png")no-repeat center center;
+                        background-size: cover;
+                    }
+                    &.icon3{
+                        background: url("../images/icon/server-3.png")no-repeat center center;
+                        background-size: cover;
+                    }
+                    &.icon4{
+                        background: url("../images/icon/server-4.png")no-repeat center center;
+                        background-size: cover;
+                    }
+    
+                }
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+            }
+        }
+    }
+    .detail-body{
+        .tab{
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            border-bottom:1px solid #ddd;
+            .item{
+                font-size: pxTorem(16px);
+                color:#999;
+                line-height: pxTorem(46px);
+                border-bottom:2px solid transparent; 
+                &.active{
+                    color:#38495A;
+                    border-bottom-color: #38495A;
+                }
+            }
+
+        }
+        .course-list{
+            .item{
+              margin-top:pxTorem(10px);
+               display: -webkit-box;
+               display: -moz-box;
+               display: -ms-flexbox;
+               display: flex;
+               -webkit-box-align: center;
+                  -moz-box-align: center;
+                   -ms-flex-align: center;
+                       align-items: center;
+               .no{
+                    font-size:pxTorem(14px);
+                    color:#b7b7b7;
+                    margin-left:pxTorem(20px);
+               }
+               .msg{
+                -webkit-box-flex:1;
+                   -moz-box-flex:1;
+                    -ms-flex:1;
+                        flex:1;
+                padding:pxTorem(15px);
+                border-bottom: 1px solid #ddd;
+                .title{
+                    color:#333;
+                    font-size: pxTorem(15px);
+                    line-height: 1.43;
+                    overflow:hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .date{
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    font-size:pxTorem(12px);
+                    color:#999;
+                    margin-top: pxTorem(10px);
+                    span:nth-child(2){
+                        margin-left: pxTorem(30px);
+                    }
+                }
+               }
+            }
+        }
+        .introduce{
+            font-size: pxTorem(14px);
+            padding:pxTorem(20px) pxTorem(15px);
+            color:#666;
+            display: none;
+        }
+    }
+}
+#fy-footer{
+    padding:0;
+    .opera-group{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        width:100%;
+        height:100%;
+
+        a,span{
+            -webkit-box-flex:1;
+               -moz-box-flex:1;
+                -ms-flex:1;
+                    flex:1;
+            font-size:pxTorem(15px);
+            color:#fff;
+            line-height: pxTorem(44px);
+            text-align:center;
+        }
+        span{
+            color:#666;
+            background: #f7f7f7;
+        }
+    }
+}

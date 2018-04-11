@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>课程详情页</title>
+    <script src="js/fontsize.js"></script>
+    <link rel="stylesheet" href="css/base_2017.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    
+    
+</head>
+
+<body>
+    <header id="fy-header">
+        <a class="btn-back" href="javascript:history.go(-1);"><span>返回</span></a>
+        <b class="btn-menu">
+            <i></i>
+            <i></i>
+            <i></i>
+        </b>
+        <p class="title">课程详情页</p>
+    </header>
+    <div class="menu-box">
+        <p class="mask-layer"></p>
+        <div class="menu-bar">
+            <ul class="menu-list">
+                <li class="item active">
+                    <a href="index.html">
+                        主页
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="goods_list.html">
+                        考研计划
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="work_project.html">
+                        就业计划
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="around_project.html">
+                        圈子计划
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="apply_list.html">
+                        查看已报名课程
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section id="main">
+        <div class="detail">
+            <div class="detail-header">
+                <div class="img">
+                    <img src="upload/index-bg1.png" />
+                </div>
+                <div class="msg">
+                    <h4 class="title">货币金融学入门课程</h4>
+                    <p class="description">梳理货币金融学和公司金融学知识框架和基础知识点，适用于刚开始看书或尚未看书的备考学生。</p>
+                    <p class="pay"><i>¥</i>2800</p>
+                    <div class="other">
+                        <span class="item">时间：2018 5.1-5.2</span>
+                        <span class="item">课时：6节</span>
+                        <span class="item">报名人数：832</span>
+                    </div>
+                </div>
+                <div class="server">
+                    <div class="item">
+                        <i class="icon1"></i>
+                        <span>质量保障</span>
+                    </div>
+                    <div class="item">
+                        <i class="icon2"></i>
+                        <span>低价保障</span>
+                    </div>
+                    <div class="item">
+                        <i class="icon3"></i>
+                        <span>服务保障</span>
+                    </div>
+                    <div class="item">
+                        <i class="icon4"></i>
+                        <span>服务保障</span>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-body">
+                <div class="tab">
+                    <span class="item">课程介绍</span>
+                    <span class="item active">课程安排</span>
+                </div>
+                <div class="course-list">
+                    <div class="item">
+                        <span class="no">01</span>
+                        <div class="msg">
+                            <p class="title">货币金融学入门课程</p>
+                            <p class="date">
+                                <span>时间：2018.5.1</span>
+                                <span>课时：6节</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="no">02</span>
+                        <div class="msg">
+                            <p class="title">货币金融学入门课程</p>
+                            <p class="date">
+                                <span>时间：2018.5.2</span>
+                                <span>课时：6节</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 课程介绍 -->
+                <div class="introduce">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eos minus fugiat odit unde nam, ullam eveniet itaque illum alias et doloremque, deleniti molestias optio aliquid saepe, numquam corporis debitis!
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="fy-footer">
+        <div class="opera-group">
+            <span>401班</span>
+            <a href="apply.html">我要报名</a>
+        </div>
+    </div>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+    $(function() {
+
+        //点击菜单按钮，收关菜单操作
+        $('.btn-menu').click(function() {
+
+            var b = $('.menu-box');
+            if (b.hasClass("on")) {
+
+                b.removeClass("on");
+                b.hide();
+            } else {
+                b.show(50);
+                b.addClass("on");
+            }
+        });
+    })
+    </script>
+</body>
+
+</html>

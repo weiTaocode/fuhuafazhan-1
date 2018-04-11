@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>登录</title>
+    <script src="js/fontsize.js"></script>
+    <link rel="stylesheet" href="css/base_2017.css">
+    <link rel="stylesheet" href="css/login.css">
+    
+   
+    <style>
+       
+    </style>
+</head>
+<body>
+    <header id="fy-header">
+
+        <a class="btn-back" href="javascript:history.go(-2);"><span>返回</span></a>
+        <b class="btn-menu">
+            <i></i>
+            <i></i>
+            <i></i>
+        </b>
+        <p class="title">登录</p>
+    </header>
+    <div class="menu-box">
+        <p class="mask-layer"></p>
+        <div class="menu-bar">
+            <ul class="menu-list">
+                <li class="item active">
+                    <a href="index.html">
+                        主页
+                    </a>
+                </li>
+                 <li class="item">
+                    <a href="goods_list.html">
+                        考研计划
+                    </a>
+                </li>
+                 <li class="item">
+                    <a href="work_project.html">
+                        就业计划
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="around_project.html">
+                        圈子计划
+                    </a>
+                </li>
+                 <li class="item">
+                    <a href="apply_list.html">
+                        查看已报名课程
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <section id="main">
+       <div class="login-box">
+           <form action="" mehthod="post">
+               <div class="file-group phone">
+                   <label for=""></label>
+                   <div class="input">
+                         <input type="text" placeholder="请输入你的手机号码"/>
+                   </div>
+               </div>
+               <div class="file-group verify">
+                   <label for=""></label>
+                   <div class="input">
+                        <input type="text" placeholder="请输入您的验证码"/>
+                        <b class="btn-get-verify">获取验证码</b>
+                   </div>
+               </div>
+
+               <span class="submit-btn">登录</span>
+           </form>
+       </div> 
+    </section>
+    <!-- <div id="fy-footer">
+        <p class="copy">Copyright 1999-2018 复骅发展版权所有</p>
+    </div> -->
+     <script src="js/jquery-1.10.1.min.js"></script>
+    <script>
+        $(function(){
+
+            //点击菜单按钮，收关菜单操作
+            $('.btn-menu').click(function(){
+
+                var b = $('.menu-box');
+                if (b.hasClass("on")) {
+                    
+                    b.removeClass("on");
+                    b.hide();
+                }else{
+                    b.show(50);
+                    b.addClass("on");
+                }
+            });
+        })
+    </script>
+</body>
+</html>

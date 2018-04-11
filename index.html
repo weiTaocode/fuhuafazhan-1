@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>首页</title>
+    <script src="js/fontsize.js"></script>
+    <link rel="stylesheet" href="css/base_2017.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    
+   
+</head>
+<body>
+    <header id="fy-header">
+
+        <!-- <a class="btn-back" href="history.go(-1)"><span>返回</span></a> -->
+        <b class="btn-menu">
+            <i></i>
+            <i></i>
+            <i></i>
+        </b>
+        <!-- <p class="title">復驊發展</p> -->
+    </header>
+    <div class="menu-box">
+        <p class="mask-layer"></p>
+        <div class="menu-bar">
+            <ul class="menu-list">
+                <li class="item active">
+                    <a href="index.html">
+                        主页
+                    </a>
+                </li>
+                 <li class="item">
+                    <a href="goods_list.html">
+                        考研计划
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="work_project.html">
+                        就业计划
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="around_project.html">
+                        圈子计划
+                    </a>
+                </li>
+                 <li class="item">
+                    <a href="apply_list.html">
+                        查看已报名课程
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <section id="main">
+        <div class="top-bar">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="upload/index-bg.png" alt=""/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="upload/index-bg.png" alt=""/>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="body-bar">
+             <div class="fy-index-item" style="background: url('upload/index-bg1.png')no-repeat center center;background-size: cover;-webkit-background-size:cover">
+                <span class="mask"></span>
+               <a class="content" href="goods_list.html">
+                    <div class="img">
+                        <img src="images/icon/icon@2x.png" alt=""/>
+                    </div>
+                    <p class="s-title">考研计划</p>
+                </a>
+            </div>
+             <div class="fy-index-item" style="background: url('upload/index-bg2.png')no-repeat center center;background-size: cover;-webkit-background-size:cover">
+                <span class="mask"></span>
+                <a class="content" href="work_project.html">
+                    <div class="img">
+                        <img src="images/icon/icon1@2x.png" alt=""/>
+                    </div>
+                    <p class="s-title">就业计划</p>
+                </a>
+            </div>
+             <div class="fy-index-item" style="background: url('upload/index-bg3.png')no-repeat center center;background-size: cover;-webkit-background-size:cover">
+                <span class="mask"></span>
+                <a class="content" href="around_project.html">
+                    <div class="img">
+                        <img src="images/icon/icon2@2x.png" alt=""/>
+                    </div>
+                    <p class="s-title">圈子计划</p>
+                </a>
+            </div>
+        </div>
+       <p class="copy">Copyright 1999-2018 复骅发展版权所有</p>
+    </section>
+    <!-- <div id="fy-footer">
+        
+    </div> -->
+    
+     <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        $(function(){
+
+            //点击菜单按钮，收关菜单操作
+            $('.btn-menu').click(function(){
+
+                var b = $('.menu-box');
+                if (b.hasClass("on")) {
+                    b.hide();
+                    b.removeClass("on");
+                }else{
+                    b.show(50);
+                    // setTimeout(function(){
+                         b.addClass("on");
+                     // },50)
+                   
+                }
+            });
+
+            //轮播
+            new Swiper ('.swiper-container', {
+                direction: 'horizontal',
+                autoplay: 5000,//可选选项，自动滑动
+                loop: true,
+                autoplayDisableOnInteraction : false,
+                pagination: '.swiper-pagination', // 分页器
+            })  
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+.detail {
+  background: #fff; }
+  .detail .detail-header .img img {
+    width: 100%;
+    height: auto; }
+  .detail .detail-header .msg {
+    padding: 0.6389776358rem 0.851970181rem; }
+    .detail .detail-header .msg .title {
+      font-size: 0.6815761448rem;
+      color: #333;
+      line-height: 1.3631522897rem; }
+    .detail .detail-header .msg .description {
+      font-size: 0.6389776358rem;
+      color: #999;
+      line-height: 1.0223642173rem; }
+    .detail .detail-header .msg .pay {
+      color: #2C3E50;
+      font-size: 0.6815761448rem;
+      margin-top: 0.4259850905rem; }
+      .detail .detail-header .msg .pay i {
+        font-size: 0.4259850905rem;
+        padding-right: 0.0851970181rem; }
+    .detail .detail-header .msg .other {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 0.4259850905rem;
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .detail .detail-header .msg .other .item {
+        font-size: 0.5111821086rem;
+        color: #999; }
+  .detail .detail-header .server {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .detail .detail-header .server .item {
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      background: #f7f7f7;
+      height: 1.618743344rem;
+      line-height: 1.618743344rem;
+      color: #aaa;
+      font-size: 0.5111821086rem;
+      text-align: center; }
+      .detail .detail-header .server .item i {
+        width: 0.6389776358rem;
+        height: 0.6389776358rem;
+        margin-right: 0.1277955272rem;
+        display: inline-block;
+        vertical-align: middle; }
+        .detail .detail-header .server .item i.icon1 {
+          background: url("../images/icon/server-1.png") no-repeat center center;
+          background-size: cover; }
+        .detail .detail-header .server .item i.icon2 {
+          background: url("../images/icon/server-2.png") no-repeat center center;
+          background-size: cover; }
+        .detail .detail-header .server .item i.icon3 {
+          background: url("../images/icon/server-3.png") no-repeat center center;
+          background-size: cover; }
+        .detail .detail-header .server .item i.icon4 {
+          background: url("../images/icon/server-4.png") no-repeat center center;
+          background-size: cover; }
+      .detail .detail-header .server .item span {
+        display: inline-block;
+        vertical-align: middle; }
+  .detail .detail-body .tab {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    border-bottom: 1px solid #ddd; }
+    .detail .detail-body .tab .item {
+      font-size: 0.6815761448rem;
+      color: #999;
+      line-height: 1.9595314164rem;
+      border-bottom: 2px solid transparent; }
+      .detail .detail-body .tab .item.active {
+        color: #38495A;
+        border-bottom-color: #38495A; }
+  .detail .detail-body .course-list .item {
+    margin-top: 0.4259850905rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .detail .detail-body .course-list .item .no {
+      font-size: 0.5963791267rem;
+      color: #b7b7b7;
+      margin-left: 0.851970181rem; }
+    .detail .detail-body .course-list .item .msg {
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      padding: 0.6389776358rem;
+      border-bottom: 1px solid #ddd; }
+      .detail .detail-body .course-list .item .msg .title {
+        color: #333;
+        font-size: 0.6389776358rem;
+        line-height: 1.43;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .detail .detail-body .course-list .item .msg .date {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 0.5111821086rem;
+        color: #999;
+        margin-top: 0.4259850905rem; }
+        .detail .detail-body .course-list .item .msg .date span:nth-child(2) {
+          margin-left: 1.2779552716rem; }
+  .detail .detail-body .introduce {
+    font-size: 0.5963791267rem;
+    padding: 0.851970181rem 0.6389776358rem;
+    color: #666;
+    display: none; }
+
+#fy-footer {
+  padding: 0; }
+  #fy-footer .opera-group {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%; }
+    #fy-footer .opera-group a, #fy-footer .opera-group span {
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      font-size: 0.6389776358rem;
+      color: #fff;
+      line-height: 1.8743343983rem;
+      text-align: center; }
+    #fy-footer .opera-group span {
+      color: #666;
+      background: #f7f7f7; }
+
+/*# sourceMappingURL=detail.css.map */
