@@ -26,7 +26,8 @@
       .top-fixed-header .first-tab .item:last-child, .top-fixed-header .second-tab .item:last-child {
         border-right: none; }
       .top-fixed-header .first-tab .item.active, .top-fixed-header .second-tab .item.active {
-        color: #2C3E50; }
+        color: #2C3E50;
+        font-weight: bold; }
   .top-fixed-header .second-tab .item {
     border-right: none;
     border-bottom: 2px solid transparent; }
@@ -78,7 +79,7 @@
         white-space: nowrap; }
       .goods-list .goods-item .msg .description {
         font-size: 0.5111821086rem;
-        color: #666;
+        color: #bbb;
         line-height: 0.851970181rem;
         height: 1.7039403621rem;
         overflow: hidden;

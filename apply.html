@@ -239,9 +239,9 @@
                 </div>
             </div>
             <div class="course-slide slide-item">
-                <p class="title">核对课程</p>
+                <p class="title">核对专业课</p>
                 <div class="list">
-                    <span class="item active" data-code="1" data-word="401课程">401课程</span>
+                    <span class="item active" data-code="1" data-word="431课程">431课程</span>
                     <span class="item" data-code="2" data-word="802课程">802课程</span>
                 </div>
             </div>
@@ -259,8 +259,8 @@
                         <span class="choose-icon"></span>
                         <div class="msg">
                             <p class="line-1">
-                                <span class="s-title">基础班</span>
-                                <a href="javascript:;">查看详情</a>
+                                <span class="s-title">五月基础班</span>
+                                <a href="goods_detail.html">查看详情</a>
                             </p>
                             <p class="line-2">
                                 2018年5月1日至2018年5月2日
@@ -271,11 +271,11 @@
                         <span class="choose-icon"></span>
                         <div class="msg">
                             <p class="line-1">
-                                <span class="s-title">提高班</span>
-                                <a href="javascript:;">查看详情</a>
+                                <span class="s-title">八月强化班</span>
+                                <a href="goods_detail.html">查看详情</a>
                             </p>
                             <p class="line-2">
-                                2018年5月1日至2018年5月2日
+                                2018年8月1日至2018年8月2日
                             </p>
                         </div>
                     </li>
@@ -283,11 +283,35 @@
                         <span class="choose-icon"></span>
                         <div class="msg">
                             <p class="line-1">
-                                <span class="s-title">强化班</span>
-                                <a href="javascript:;">查看详情</a>
+                                <span class="s-title">十月提高班</span>
+                                <a href="goods_detail.html">查看详情</a>
                             </p>
                             <p class="line-2">
-                                2018年5月1日至2018年5月2日
+                                2018年10月1日至2018年10月2日
+                            </p>
+                        </div>
+                    </li>
+                     <li class="item" data-word="强化班" data-code="3">
+                        <span class="choose-icon"></span>
+                        <div class="msg">
+                            <p class="line-1">
+                                <span class="s-title">十一月冲刺班</span>
+                                <a href="goods_detail.html">查看详情</a>
+                            </p>
+                            <p class="line-2">
+                                2018年11月1日至2018年11月2日
+                            </p>
+                        </div>
+                    </li>
+                     <li class="item" data-word="强化班" data-code="3">
+                        <span class="choose-icon"></span>
+                        <div class="msg">
+                            <p class="line-1">
+                                <span class="s-title">十二月模考班</span>
+                                <a href="goods_detail.html">查看详情</a>
+                            </p>
+                            <p class="line-2">
+                                2018年12月1日至2018年12月2日
                             </p>
                         </div>
                     </li>
@@ -317,7 +341,13 @@
                 b.addClass("on");
             }
         });
+         //点击遮罩层，关闭菜单
+            $(".menu-box .mask-layer").click(function(){
 
+                    var b = $(this).parent();
+                    b.hide();
+                    b.removeClass("on");
+            });
 
         //选课轮播
         function mySwiper() {

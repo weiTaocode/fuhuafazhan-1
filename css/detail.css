@@ -85,7 +85,8 @@
       border-bottom: 2px solid transparent; }
       .detail .detail-body .tab .item.active {
         color: #38495A;
-        border-bottom-color: #38495A; }
+        border-bottom-color: #38495A;
+        font-weight: bold; }
   .detail .detail-body .course-list .item {
     margin-top: 0.4259850905rem;
     display: -webkit-box;

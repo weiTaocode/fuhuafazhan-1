@@ -74,8 +74,9 @@
                 <span class="item active">802课程</span>
             </div>
             <div class="second-tab">
+                <span class="item  active">全程班</span>
                 <span class="item">基础班</span>
-                <span class="item active">强化班</span>
+                <span class="item">强化班</span>
                 <span class="item">提高班</span>
                 <span class="item">冲刺班</span>
                 <span class="item">模考班</span>
@@ -184,7 +185,13 @@
                     b.addClass("on");
                 }
             });
+             //点击遮罩层，关闭菜单
+            $(".menu-box .mask-layer").click(function(){
 
+                    var b = $(this).parent();
+                    b.hide();
+                    b.removeClass("on");
+            });
 
             $('.first-tab,.second-tab').on("click",'.item', function(){
 

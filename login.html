@@ -109,6 +109,14 @@
                     b.addClass("on");
                 }
             });
+
+             //点击遮罩层，关闭菜单
+            $(".menu-box .mask-layer").click(function(){
+
+                    var b = $(this).parent();
+                    b.hide();
+                    b.removeClass("on");
+            });
         })
     </script>
 </body>

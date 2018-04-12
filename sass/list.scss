@@ -32,6 +32,7 @@ $de_font:23.475px;
 			}
 			&.active{
 				color:#2C3E50;
+				font-weight:bold;
 			};
 		}
 		
@@ -98,7 +99,7 @@ $de_font:23.475px;
 			}
 			.description{
 				font-size: pxTorem(12px);
-				color:#666;
+				color:#bbb;
 				line-height: pxTorem(20px);
 				height:pxTorem(40px);
 				overflow: hidden;
