@@ -16,11 +16,12 @@ $de_font:23.475px;
 		display:-ms-flexbox;
 		display:flex;
 		border-bottom: 1px solid #ddd;
+		width:100%;
+		overflow-x:auto;
 		.item{
-			-webkit-box-flex:1;
-			   -moz-box-flex:1;
-			    -ms-flex:1;
-			        flex:1;
+			width:20%;
+			flex-shrink: 0;
+			
 			border-right:1px solid #ddd;
 			height:pxTorem(44px);
 			line-height: pxTorem(44px);
@@ -46,6 +47,11 @@ $de_font:23.475px;
 			}
 		}
 		
+	}
+	.first-tab {
+		.item{
+			flex:1;
+		}
 	}
 }
 .goods-list{

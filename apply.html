@@ -136,10 +136,10 @@
                             <span class="show" id="choose-class" data-target="class-slide">基础班</span>
                             <input type="text" value="1" disabled hidden/>
                         </div>
-                        <div class="input">
+                        <!-- <div class="input">
                             <span class="show" id="choose-time" data-target="time-slide">选择全程班</span>
                             <input type="text" value="1" disabled hidden/>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="course-body">
@@ -245,15 +245,15 @@
                     <span class="item" data-code="2" data-word="802课程">802课程</span>
                 </div>
             </div>
-            <div class="time-slide slide-item">
+            <!-- <div class="time-slide slide-item">
                 <p class="title">核对课程</p>
                 <div class="list">
                     <span class="item active" data-code="1" data-word="全程班">全程班</span>
                     <span class="item" data-code="2" data-word="后半段班">后半段班</span>
                 </div>
-            </div>
+            </div> -->
             <div class="class-slide slide-item">
-                <p class="title">核对课程</p>
+                <p class="title">核对课程(可多选)</p>
                 <ul class="list">
                     <li class="item active" data-word="基础班" data-code="1">
                         <span class="choose-icon"></span>
@@ -291,7 +291,7 @@
                             </p>
                         </div>
                     </li>
-                     <li class="item" data-word="强化班" data-code="3">
+                     <li class="item" data-word="强化班" data-code="4">
                         <span class="choose-icon"></span>
                         <div class="msg">
                             <p class="line-1">
@@ -303,7 +303,7 @@
                             </p>
                         </div>
                     </li>
-                     <li class="item" data-word="强化班" data-code="3">
+                     <li class="item" data-word="强化班" data-code="5">
                         <span class="choose-icon"></span>
                         <div class="msg">
                             <p class="line-1">
@@ -312,6 +312,18 @@
                             </p>
                             <p class="line-2">
                                 2018年12月1日至2018年12月2日
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item all" data-word="全程班" data-code="6">
+                        <span class="choose-icon"></span>
+                        <div class="msg">
+                            <p class="line-1">
+                                <span class="s-title">全程班</span>
+                                <a href="goods_detail.html">查看详情</a>
+                            </p>
+                            <p class="line-2">
+                                2018年5月1日至2018年12月2日
                             </p>
                         </div>
                     </li>
@@ -370,14 +382,30 @@
             }
         })
 
-        //课程相关的单选操作
-        $('.course-slide .list,.class-slide .list,.time-slide .list').on('click', '.item', function() {
+        //专业操作
+        $('.course-slide .list').on('click', '.item', function() {
             var _this = $(this);
 
             if (_this.hasClass("active")) {
                 return;
             } else {
                 _this.addClass('active').siblings('.active').removeClass('active');
+            }
+        });
+        //课程多选操作，选择全程班，其他单程班就不再选择
+        $('.class-slide .list').on('click','.item',function(){
+            var _this = $(this);
+            if(_this.hasClass("active")){
+                _this.removeClass('active');
+            }else{
+
+                _this.addClass('active');
+                //如果为全程班
+                if(_this.hasClass('all')){
+                    _this.siblings('.active').removeClass('active');
+                }else{
+                    _this.siblings('.all.active').removeClass('active');
+                }
             }
         });
 
