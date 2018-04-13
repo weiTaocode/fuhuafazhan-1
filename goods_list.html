@@ -194,6 +194,109 @@
                     b.removeClass("on");
             });
 
+
+            var listOpera = {
+                page:1,
+                loaded:false,
+                urlParam:null,
+                list:[],
+                init:function(){
+                    var _this = this;
+                    //获取页面参数
+                    _this.urlParam = _this.getUrlParam();
+                   
+                   _this.getList(_this.urlParam);
+
+                    
+
+                },
+                appendHtml:function(){
+                    var list = this.list;
+                    if (list) { 
+
+                        var html = ``;
+                        (list).forEach(function(item,idx){
+                            html = `<a class="goods-item" href="goods_detail.html?s_id = ${item.s_id}">
+                                        <div class="img">
+                                            <img src="${item.thumb}" />
+                                        </div>
+                                        <div class="msg">
+                                            <p class="title">${item.name}</p>
+                                            <p class="description">${item.des}</p>
+                                            <div class="bottom">
+                                                <span class="com">${item.b_date}-${item.e_date}</span>
+                                                <span class="com">课时：${item.lesson_hours}</span>
+                                                <span class="com pay"><i>¥</i>${item.price}</span>
+                                            </div>
+                                        </div>
+
+                                    </a>`;
+                            $('.goods-list .list').append(html);
+                        })
+
+                    }
+                },
+                getList:function(params){
+                    var _this = this;
+
+                    params = params || '';
+                    var f_id = params.f_id || '431',
+                        s_id = params.s_id || '1';
+
+                    //因为用的是easy mock接口模拟数据，需要跨域
+                    $.ajax({
+                        url:"https://www.easy-mock.com/mock/5ab7a38f89962b05a31a31a9/example/fuhua_list",
+                        data:{"f_id":f_id, "s_id":s_id,"jsonp_param_name":"callback"},
+                        dataType:"jsonp",
+                        jsonp:"callback",
+                        method:'GET',
+                        ansync:false,
+                        success:function(res){
+        
+                            _this.list = res.list;
+                            _this.appendHtml();
+                            
+                        },
+                        fail:function(err){
+                            console.log('出问题');
+                            _this.list = [];
+                        }
+
+                    })
+                },
+                //获取地址参数
+                getUrlParam:function(url){
+                    var result = {};//用来存放地址参数数据
+                    
+                    if (url) {
+
+                        var tmp = url.split("?")[1];
+                        if (tmp) {
+                            tmp = tmp.split("&");
+                            tmp.forEach(function(val,idx){
+                                result[tmp.split("=")[0]] = tmp.split("=")[1];
+                            })
+                        }
+
+                    } else {
+                        tmp = window.location.search.substring(1);
+                            if(tmp){
+                                tmp = tmp.split("&");
+                                tmp.forEach(function(val,idx){
+                                    result[val.split("=")[0]] = val.split("=")[1];
+                                })
+                            }
+                    }
+
+                    return result;
+                }
+            }
+
+            // listOpera.init();
+
+            
+
+
             $('.first-tab,.second-tab').on("click",'.item', function(){
 
                 var _this = $(this);
@@ -204,6 +307,8 @@
                 }
             });
         })
+
+
     </script>
 </body>
 </html>
