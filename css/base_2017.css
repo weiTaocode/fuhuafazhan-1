@@ -495,7 +495,25 @@ input::-webkit-input-placeholder{
     background:#2C3E50!important;
 }
 
-
+.loading-status{
+    position: fixed;
+    left:0;
+    top:0;
+    right: 0;
+    bottom:0;
+    z-index: 1999;
+    background: rgba(0,0,0,.5);
+    display: none;
+}
+.loading-status p{
+    font-size: 14px;
+    color:#fff;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
 
 
 
