@@ -515,6 +515,11 @@ input::-webkit-input-placeholder{
     transform: translateY(-50%);
 }
 
-
+.loaded{
+    color:#999;
+    font-size:12px;
+    text-align: center;
+    line-height: 30px;
+}
 
 
